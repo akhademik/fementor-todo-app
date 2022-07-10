@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="styles/style.css" />
+    <script src="app.js" defer></script>
+		<title>Frontend Mentor | Todo app</title>
+	</head>
+	<body>
+		<header>
+      <!-- <div></div> -->
+			<img src="./images/bg-mobile-dark.jpg" alt="" class="header" />
+		</header>
+		<section class="add">
+			<div class="add-todo">
+				<h2 class="todo-title">TODO</h2>
+				<img src="./images/icon-sun.svg" alt="" class="toggle" />
+			</div>
+			<div class="task task-create">
+				<input class="create-todo" type="checkbox"></input>
+				<input type="text" class="task-name" placeholder="Create a new todo..." require></input>
+			</div>
+			<div class="todos js-all-todos">
+        <!-- PRINT OUT TODOS -->
+        <div class="js-tasks"></div>
+        <!-- END OF PRINT OUT TODOS -->
+        <div class="task todo-end">
+          <p class="todo-total">5 items left</p>
+          <button class="clear">
+            <p>Clear Completed</p>
+          </button>
+        </div>
+        </div>
+        <footer>
+          <div class="footer">            
+            <button class="show_all">
+              <p>All</p>
+            </button>
+            <button class="show_active">
+              <p>Active</p>
+            </button>
+            <button class="show_completed">
+              <p>Completed</p>
+            </button>
+          </div>
+          <p class="reorder">Drag and drop to reorder list</p>
+        </footer>
+		</section>
+	</body>
+</html>
